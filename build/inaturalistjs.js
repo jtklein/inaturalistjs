@@ -3233,6 +3233,11 @@ var projects = function () {
     value: function subscriptions(params, options) {
       return iNaturalistAPI.get("projects/:id/subscriptions", params, iNaturalistAPI.optionsUseAuth(options));
     }
+  }, {
+    key: "followers",
+    value: function followers(params, options) {
+      return iNaturalistAPI.get("projects/:id/followers", params, options);
+    }
   }]);
 
   return projects;
